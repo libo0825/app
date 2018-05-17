@@ -1,0 +1,89 @@
+.City {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+}
+.City .title{
+    width: 100%;
+    height: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: .01rem solid #ccc;
+    padding:0 .2rem;
+    
+}
+
+.City .title b{
+    font-weight: bold;
+    font-size: .3rem;
+    margin-left: .2rem;
+}
+.City .head {
+    background: skyblue;
+    font-size: .3rem;
+    color: #fff;
+    width: 100%;
+    height: 1rem;
+    border-bottom: .01rem solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.City .head  span ,.City .head  a{
+    color: #fff;
+    font-size: .3rem;
+    padding: 0 .2rem;
+}
+.City .head  button {
+    position: absolute;
+    border: 0;
+    outline: 0;
+    background: indianred;
+    color: #fff;
+    line-height: .6rem;
+    padding: 0 .15rem;
+    font-size: .25rem;
+    right: .2rem;
+}
+
+.CityTop {
+    border-bottom: .01rem solid #ccc;
+}
+
+.CityTop h2 {
+    line-height: .8rem;
+    padding-left: .3rem;
+    font-size: .3rem;
+}
+
+.CityBox {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.CityBox h3 {
+    line-height: .5rem;
+    padding-left: .2rem;
+    font-size: .3rem;
+}
+
+.CityBox ul,
+.CityTop ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.CityBox ul li,
+.CityTop ul li {
+    padding: .2rem;
+    margin: .1rem;
+    font-size: .25rem;
+    border: .01rem solid transparent;
+}
+
+.CityBox ul li.active {
+    border: .01rem solid red;
+}

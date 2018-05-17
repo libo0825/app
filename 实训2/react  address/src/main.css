@@ -1,0 +1,28 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-size: .14rem;
+}
+a{text-decoration: none;color:#000;}
+ul li,ol li{list-style:none;}
+i,em{
+	font-style: normal;
+}
+b,strong{
+	font-weight: normal;
+}
+i{
+	text-decoration: none;
+}
+html,body,#App,#root{
+	width: 100%;
+	height: 100%;
+}
+body{
+	font-size:.32rem;
+}
+#App{
+	display: flex;
+	flex-direction: column;
+}

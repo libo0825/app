@@ -1,0 +1,30 @@
+export default [
+	{
+		flag:true,
+		img:'./img/1.jpg',
+		title:'眼药水眼药水眼药水',
+		price:19.50,
+		count:0
+	},
+	{
+		flag:true,
+		img:'./img/2.jpg',
+		title:'思密达思密达思密达',
+		price:25.80,
+		count:0
+	},
+	{
+		flag:true,
+		img:'./img/3.jpg',
+		title:'云南白药云南白药云南白药',
+		price:15.00,
+		count:0
+	},
+	{
+		flag:true,
+		img:'./img/4.jpg',
+		title:'百灵百灵百灵百灵百灵',
+		price:15.50,
+		count:0
+	}
+]

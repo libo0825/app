@@ -1,0 +1,8 @@
+ #Wd .head {
+    width: 100%;
+    height: 1rem;
+    border-bottom: .01rem solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

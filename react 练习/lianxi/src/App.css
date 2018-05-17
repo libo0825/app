@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#app{
+  width: 100%;
+  position: relative;
+}
+a{
+  text-decoration: none;
+  color:#000;
+}
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #000;
+}
+.foot{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #000;
+}
+.f2{
+  width: 10%;
+}
+.d1{
+  width: 40%;
+}
+button{
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px
+}
+.aa{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .ff{
+    width: 10%;
+    text-align: center;
+  }
+  .bb{
+    width: 30%;
+    padding: 5px;
+  }
+  .cc{
+    width: 20%;
+    height: 70px;
+  }
+  .cc img{
+    width: 100%;
+    height: 100%;
+  }
+  .dd{
+    width: 10%;
+    text-align: center;
+
+  }
+  .ee{
+    width: 30%;
+    display: flex;
+    align-items: center;
+
+  }
+  .e1,.e2{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .e3{
+    width: 30px;
+    height: 25px;
+    text-align: center;
+  }

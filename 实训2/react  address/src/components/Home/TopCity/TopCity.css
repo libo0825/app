@@ -1,0 +1,128 @@
+.TopCity {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.TopCity .title{
+    width: 100%;
+    height: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: .01rem solid #ccc;
+    padding:0 .2rem;
+    
+}
+
+.TopCity .title b{
+    font-weight: bold;
+    font-size: .3rem;
+    margin-left: .2rem;
+}
+.TopCity .head {
+    background: skyblue;
+    font-size: .3rem;
+    color: #fff;
+    width: 100%;
+    height: 1rem;
+    border-bottom: .01rem solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.TopCity .head  span ,.TopCity .head  a{
+    color: #fff;
+    font-size: .3rem;
+    padding: 0 .2rem;
+}
+
+.TopCityBox {
+    flex: 1;
+    width: 100%;
+    display: flex;
+}
+
+.TopCityLeft h3 {
+    line-height: .6rem;
+    padding-left: .3rem;
+    font-size: .3rem;
+    background: #ccc;
+}
+
+
+
+.TopCityLeft ul,
+.TopCityRight ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.TopCityLeft ul li,
+.TopCityRight ul li {
+    font-size: .25rem;
+    line-height: .8rem;
+    padding-left: .2rem;
+    background: #eee;
+}
+
+.TopCityLeft ul li.active {
+    background: #fff;
+}
+.TopCityRight ul li.active {
+    color:red;
+}
+
+.TopCityRight ul li {
+    border-bottom: .02rem solid #ccc;
+    background: #fff;
+}
+
+.TopCityRight,
+.TopCityLeft {
+    overflow-y: scroll;
+}
+
+.TopCityRight{
+    flex: 4.5;
+}
+.TopCityLeft{
+    flex: 4.5;
+}
+.TopCityEn{
+    background: #eee;
+    flex:1;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TopCityEn ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.TopCityEn ul li {
+    font-size: .3rem;
+    line-height: .5rem;
+    background: #fff;
+    width: .5rem;
+    text-align: center;
+    margin-bottom: .2rem;
+    font-weight: bold;
+}
+
+.TopCityEn ul li.active{
+    color:red;
+}
+
+.TopCityLeft::-webkit-scrollbar {
+    display: none;
+}
+.TopCityRight::-webkit-scrollbar {
+    display: none;
+}
