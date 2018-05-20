@@ -4,7 +4,7 @@ Vue.use(vuex)
 export default new vuex.Store({
 
 	state:{
-		data:null,
+		data:[],
 		count:0,
 		price:0,
 		flg:false
@@ -14,25 +14,25 @@ export default new vuex.Store({
 		getData({commit},data){
 			commit('getData',data)
 		},
-		addcount({commit},ind){
-			commit('addcount',ind)
+		addCount({commit},ind){
+			commit('addCount',ind)
 
 		},
-		delcount({commit},ind){
-			commit('delcount',ind)
+		lessenCount({commit},ind){
+			commit('lessenCount',ind)
 		},
-		danji({commit},ind){
-			commit('danji',ind)
+		click({commit},ind){
+			commit('click',ind)
 		},
-		quanX({commit},f){
-			commit('quanX',f)
+		allClick({commit},f){
+			commit('allClick',f)
 		}
 	},
 	mutations:{
 		getData(state,data){
 			state.data=data
 		},
-		addcount(state,ind){
+		addCount(state,ind){
 			let c=0,p=0;
 			let f=true;
 			state.data[ind].count++;
@@ -52,7 +52,7 @@ export default new vuex.Store({
 			}
 			state.flg=f
 		},
-		delcount(state,ind){
+		lessenCount(state,ind){
 			let c=0,p=0;
 			let f=true;
 			
@@ -75,7 +75,7 @@ export default new vuex.Store({
 				state.flg=f
 			}
 		},
-		danji(state,ind){
+		click(state,ind){
 			let f=true;
 			state.data[ind].flag=!state.data[ind].flag
 			if(state.data[ind].flag){
@@ -93,7 +93,7 @@ export default new vuex.Store({
 			}
 			state.flg=f
 		},
-		quanX(state,f){
+		allClick(state,f){
 			state.flg=f
 			let c=0,p=0;
 			state.data.forEach((v,i)=>{
