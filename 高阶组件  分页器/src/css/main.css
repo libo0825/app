@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.aaa{
+    height: 500px;
+    text-align: center;
+    overflow-y: scroll
+}
+.box{
+    width: 700px;
+    margin:50px auto
+}
+button{
+    width: 25px;
+    height: 25px;
+}
+select{
+    width: 60px;
+    height: 25px;
+}
