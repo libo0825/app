@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style:none;
+}
+.list{
+    width: 100%;
+    height:auto;
+}
+.list li{
+    width: 100%;
+    height:20px;
+    display:flex;
+    justify-content: space-between;
+    border:1px solid #ccc;
+}
+.Btn{
+    width: 200px;
+    height:50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+}
+.Btn li{
+    width: 20%;
+    height:100%;
+    line-height: 50px;
+    text-align:center;
+    border:1px solid orange;
+}
