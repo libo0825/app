@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+      "outDir": "./dist",  //文件输出目标文件夹，和webpack的output路径一致
+      "allowJs": true,
+      "target": "es5",   //解析成es5
+      "experimentalDecorators": true
+  },
+  "include": [
+      "./src/**/*"      //需要解析的文件夹
+  ]
+}

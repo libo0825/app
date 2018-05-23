@@ -1,0 +1,7 @@
+<div>
+    <h1 [class.special]="isSpecial">{{parentname}}</h1>
+    <ul>
+      <li *ngFor="let i of list" (click)="changeHandle($event,i)">{{i}}</li>
+    </ul>
+</div>
+  
