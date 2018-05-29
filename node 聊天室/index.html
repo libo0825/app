@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="http://169.254.237.88:3333/socket.io.js"></script>
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.box{
+			width: 715px;
+			margin:50px auto;
+			height: 500px;
+			position: relative;
+		}
+		.left{
+			width: 350px;
+			height: 465px;
+			border: 1px solid #ccc;
+			position: absolute;
+			left:0;
+			top: 0;
+			overflow-y:auto;
+		}
+		form{
+			position: absolute;
+			bottom:2px;
+			left:0;
+		}
+		form .ipt{
+			width:308px;
+			height: 19px;
+		}
+		form .btn{
+			width:30px;
+			height: 22px;
+		}
+		.right{
+			width: 350px;
+			height: 500px;
+			border: 1px solid #ccc;
+			position: absolute;
+			right:0;
+			top: 0;
+			overflow-y:auto;
+		}
+		.left p{
+			padding-left:5%;
+			width: 90%;
+			word-break: break-all;
+			word-wrap:break-word;
+		}
+		.say{
+			color:#f00;
+		}
+		h5{
+			padding:0 5%;
+			width: 90%;
+			color:#0f0;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="left">
+			<h5>欢迎进入网站1512B聊天室</h5>
+		</div>
+		<form action="">
+			<input type="text" class="ipt">
+			<input type="button" value="发送" class="btn">
+		</form>
+		<div class="right"></div>
+	</div>
+	<script>
+		var left=document.querySelector('.left');
+		var ipt=document.querySelector('.ipt');
+		var btn=document.querySelector('.btn');
+		var right=document.querySelector('.right');
+		var socket=io('http://169.254.237.88:3333');
+		/*socket.on('news', function (data) {
+			console.log(data);
+			socket.emit('my other event', { my: 'data' });
+		});*/
+		socket.emit('join', {
+			username: 'Username'
+		});
+
+		socket.on('jinru',function(data){
+			//console.log(data)
+			right.innerHTML+=`<p><span class="say">${data}</span><span>加入了聊天室</span></p>`
+		})
+
+		socket.on('likai',function(data){
+			//console.log(data)
+			right.innerHTML+=`<p><span class="say">${data}</span><span>离开了聊天室</span></p>`
+		})
+
+		btn.onclick=function(){
+			if(ipt.value!=''){
+				socket.emit('say',{
+					address:'womenziji',
+					text:ipt.value
+				});
+				left.innerHTML+=`<p><span class="user">我：</span></br><span class="say">${ipt.value}</span></p>`;
+				ipt.value='';
+			}
+			
+		}
+		
+		socket.on('fayan',function(data){
+			left.innerHTML+=`<p><span class="user">${data.address}：</span></br><span class="say">${data.text}</span></p>`
+		})
+	</script>
+</body>
+</html>
